@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/ar-portfolio/static/css/main.28cb8779.css",
+    "main.js": "/ar-portfolio/static/js/main.b65c0162.js",
+    "static/media/reportify.png": "/ar-portfolio/static/media/reportify.13ba617e5061739cffe8.png",
+    "static/media/self.png": "/ar-portfolio/static/media/self.ee8b9a7218610b148b86.png",
+    "static/media/website.png": "/ar-portfolio/static/media/website.acd11d19a4e130de00dc.png",
+    "static/media/Healthie.png": "/ar-portfolio/static/media/Healthie.123c367fd519ffe1cd5d.png",
+    "index.html": "/ar-portfolio/index.html",
+    "main.28cb8779.css.map": "/ar-portfolio/static/css/main.28cb8779.css.map",
+    "main.b65c0162.js.map": "/ar-portfolio/static/js/main.b65c0162.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.28cb8779.css",
+    "static/js/main.b65c0162.js"
+  ]
+}
