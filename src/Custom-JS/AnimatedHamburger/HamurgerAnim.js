@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { MotionConfig, motion } from "framer-motion";
 import './AnimatedTitle.css'; 
-import ProfileImage from 'C:/Users/hp/Desktop/react/portfolio/src/images/self.png'; 
+import ProfileImage from "../../images/self.png";
 
 import { Link } from 'react-router-dom';
 
