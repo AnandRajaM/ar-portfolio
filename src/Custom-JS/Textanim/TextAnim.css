@@ -1,0 +1,15 @@
+@keyframes fade-animate{
+    0% {
+      opacity: 0;
+      transform: translateY(0px) scale(0.8);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateY(0px) scale(1);
+    }
+  }
+  
+.js-fade-animate {
+    animation: fade-animate 3s ease-in-out;
+  }

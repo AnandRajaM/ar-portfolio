@@ -1,0 +1,194 @@
+/* KEYFRAMES */
+@keyframes fade-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px) scale(0.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
+
+
+@keyframes fade-up {
+  0% {
+    opacity: 0.50;
+    transform: translateY(-10px) scale(0.9);
+  }
+
+  100% {
+    opacity: 0.08;
+    transform: translateY(0px) scale(1);
+  }
+}
+
+@keyframes fade-up-sp {
+  0% {
+    opacity: 0.50;
+    transform: scale(0.9);
+  }
+
+  100% {
+    opacity: 0.08;
+    transform: scale(1);
+  }
+}
+
+
+.js-fade-down {
+  animation: fade-down 8s ease-in-out;
+}
+
+.js-fade-up {
+  animation: fade-up 8s ease-in-out;
+}
+
+.js-fade-up-sp {
+  animation: fade-up-sp 8s ease-in-out;
+}
+
+
+/* Mouse Cursor */
+.circle {
+  height: 24px;
+  width: 24px;
+  border-radius: 24px;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 99999999;
+  /* so that it stays on top of all other elements */
+}
+
+
+
+
+
+
+
+:root {
+  /* Light mode initial values */
+  --a: rgb(139, 139, 149);
+  --b: rgb(139, 139, 149);
+
+  /* Light mode hover values */
+  --a-light-hover: #6366f1;
+  --b-light-hover: #ec4899;
+  
+  /* Dark mode hover values */
+  --a-dark-hover: rgb(204, 243, 129);
+  --b-dark-hover: #4831d4;
+}
+
+/* Dark mode initial values */
+.dark {
+  --a: rgb(204, 243, 129);
+  --b: rgb(204, 243, 129);
+}
+
+@property --a {
+  syntax: '<color>';
+  inherits: false;
+  initial-value: rgb(139, 139, 149);
+}
+
+@property --b {
+  syntax: '<color>';
+  inherits: false;
+  initial-value: rgb(139, 139, 149);
+}
+
+.hover-grad-txt {
+  transition: --a 0.5s, --b 0.5s;
+  font-size: 36px;
+  text-align: center;
+  background-image: linear-gradient(to right, var(--a), var(--b));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hover-grad-txt:hover {
+  --a: var(--a-light-hover);
+  --b: var(--b-light-hover);
+}
+
+.dark .hover-grad-txt:hover {
+  --a: var(--a-dark-hover);
+  --b: var(--b-dark-hover);
+}
+
+
+
+
+
+
+.hover-grad-txt-2 {
+  transition: --a 0.5s, --b 0.5s;
+  background-image: linear-gradient(to right, var(--a), var(--b));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+}
+
+
+.hover-grad-txt-2:hover {
+  --a:#6366f1;
+  --b: #ec4899;
+}
+
+.dark .hover-grad-txt-2:hover {
+  --a:#b9f24f;
+  --b: #3317e9;
+}
+
+
+
+.hover-grad-txt-3 {
+  transition: --a 0.5s, --b 0.5s, transform 0.4s ease;
+  
+  background-image: linear-gradient(to right, var(--a), var(--b));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+}
+
+.hover-grad-txt-3:hover {
+ 
+  --a:#6366f1;
+  --b: #ec4899;
+  transform: scale(1.1);
+}
+
+.dark .hover-grad-txt-3:hover {
+  --a:#b9f24f;
+  --b: #3317e9;
+  transform: scale(1.1);
+}
+
+
+
+
+.fade-in-fast {
+  opacity: 0;
+  animation: fadeInAnimation 0.5s ease-in forwards;
+}
+
+@keyframes fadeInAnimation {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+
+
+

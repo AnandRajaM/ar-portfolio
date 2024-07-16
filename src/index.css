@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .lines-default {
+    background-color: #d1d5db; /* bg-herogray */
+  }
+
+  .lines-active {
+    
+    background: linear-gradient(to right, #6366f1, #ec4899);
+  }
+
+  .hover\:lines-hover:hover .lines-default {
+    background: linear-gradient(to right, #6366f1, #ec4899);
+  }
+  .dark .lines-default {
+    background-color: #ccf381; /* bg-dark */
+  }
+  .dark .lines-active {
+    background: linear-gradient(to right, #b9f24f, #3317e9);
+  }
+  .dark .hover\:lines-hover:hover .lines-default {
+    background: linear-gradient(to right, #b9f24f, #3317e9);
+  }
+}
